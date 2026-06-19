@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="true" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Broz TV ViP" />
+    <meta name="mobile-web-app-capable" content="true" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Broz TV ViP - Streaming Premium de TV ao Vivo e Filmes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Broz TV ViP - Streaming Premium</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {}
+        }
+      }
+    </script>
+    <script>
+      if ('serviceWorker' in navigator && !/Electron/i.test(navigator.userAgent)) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registrado com sucesso!', reg.scope))
+            .catch(err => console.error('Erro ao registrar Service Worker:', err));
+        });
+      }
+    </script>
+    <style>
+      * {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+      }
+
+      html {
+        -webkit-user-select: none;
+        user-select: none;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0a;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        position: relative;
+      }
+
+      /* Fix mobile browser bottom bar hiding content */
+      .h-screen {
+        height: 100vh !important;
+        height: 100dvh !important;
+      }
+      .min-h-screen {
+        min-height: 100vh !important;
+        min-height: 100dvh !important;
+      }
+
+
+      /* Safe area for notch phones */
+      @supports(padding: max(0px)) {
+        body {
+          padding-left: max(0px, env(safe-area-inset-left));
+          padding-right: max(0px, env(safe-area-inset-right));
+          padding-top: max(0px, env(safe-area-inset-top));
+          padding-bottom: max(0px, env(safe-area-inset-bottom));
+        }
+      }
+
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Custom scrollbar for channel lists */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #444; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #666; 
+      }
+
+      /* TV Navigation and focus indicators */
+      :focus-visible {
+        outline: 3px solid #f97316;
+        outline-offset: 2px;
+        border-radius: 4px;
+        z-index: 50;
+        box-shadow: 0 0 15px rgba(249, 115, 22, 0.5);
+      }
+      
+      button:focus, input:focus, select:focus, textarea:focus {
+        outline: 3px solid #f97316;
+        outline-offset: 1px;
+        z-index: 50;
+      }
+
+      /* Mobile optimizations */
+      input, button, select, textarea {
+        -webkit-appearance: none;
+        appearance: none;
+        font-size: 16px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="number"],
+      select,
+      textarea {
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      button {
+        min-height: 44px;
+        min-width: 44px;
+      }
+
+      /* Prevent zoom on input focus on iOS */
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        font-size: 16px;
+      }
+
+      /* Image optimization */
+      img {
+        -webkit-user-drag: none;
+        user-select: none;
+      }
+
+      /* Video player optimizations */
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: #000;
+      }
+    </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="index-CUJfrAeY.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Modificações customizadas da interface compilada do React -->
+    <script type="module" src="custom-mods/index.js?v=2.0.4"></script>
+</body>
+</html>

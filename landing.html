@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Broz.TV.VIP+ | O Futuro do Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        dark: '#050505',
+                        primary: '#3b82f6',
+                        secondary: '#4f46e5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass border-b-0 border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <span class="font-black text-white tracking-tighter">BTV</span>
+                </div>
+                <span class="font-black text-xl tracking-tight">Broz.TV.VIP+</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-300">
+                <a href="#recursos" class="hover:text-white transition-colors">Recursos</a>
+                <a href="#planos" class="hover:text-white transition-colors">Planos</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="/index.html?login=true" class="text-sm font-bold text-white hover:text-blue-400 transition-colors">Fazer Login</a>
+                <a href="#planos" class="px-5 py-2.5 bg-white text-black rounded-full text-sm font-black hover:bg-gray-200 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)]">Assinar Agora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-40 pb-20 px-6 min-h-[90vh] flex flex-col items-center justify-center text-center">
+        <div class="hero-glow"></div>
+        <span class="px-4 py-1.5 rounded-full glass border-blue-500/30 text-blue-400 text-xs font-bold tracking-widest uppercase mb-8 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+            O Próximo Nível do Entretenimento
+        </span>
+        <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight max-w-5xl">
+            A Experiência Definitiva de <br class="hidden md:block">
+            <span class="gradient-text">Streaming Inteligente</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-12 leading-relaxed">
+            Organização automática, sincronização em nuvem e inteligência artificial para o seu conteúdo. O player multiplataforma que você sempre sonhou.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#planos" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full text-sm font-black tracking-wide shadow-[0_10px_30px_rgba(59,130,246,0.3)] hover:shadow-[0_15px_40px_rgba(59,130,246,0.4)] hover:-translate-y-1 transition-all">
+                Testar 3 Dias Grátis
+            </a>
+            <a href="/index.html?login=true" class="px-8 py-4 glass text-white border-white/10 rounded-full text-sm font-bold hover:bg-white/5 transition-all">
+                Já sou Cliente
+            </a>
+        </div>
+    </header>
+
+    <!-- Recursos Premium -->
+    <section id="recursos" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4">20 Recursos Exclusivos</h2>
+                <p class="text-gray-400">Tudo que você precisa para uma experiência premium de cinema.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <!-- Recurso 1 a 20 gerados iterativamente -->
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 border border-blue-500/20 text-2xl">🌟</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Multiplataforma</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Acesse sua conta no navegador, Windows ou Android com sincronização total.</p>
+                </div>
+                
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 border border-purple-500/20 text-2xl">🤖</div>
+                    <h3 class="text-sm font-bold text-white mb-2">IA Exclusiva</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Nossa IA aprende seus hábitos e cria recomendações inteligentes.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 text-2xl">📺</div>
+                    <h3 class="text-sm font-bold text-white mb-2">TV Moderna</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Navegação fluida, botões grandes e experiência otimizada para telas grandes.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4 border border-orange-500/20 text-2xl">🎬</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Player Alta Performance</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Aceleração por hardware, retomada automática e buffer inteligente.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center mb-4 border border-pink-500/20 text-2xl">📚</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Biblioteca Inteligente</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Organiza filmes e séries com capas, sinopses e dados enriquecidos.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center mb-4 border border-yellow-500/20 text-2xl">🔎</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Busca Universal</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Pesquise por título, ator ou categoria em linguagem natural.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 border border-cyan-500/20 text-2xl">☁️</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Sincronização Nuvem</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Continue assistindo exatamente de onde parou em qualquer dispositivo.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center mb-4 border border-rose-500/20 text-2xl">👨‍👩‍👧</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Perfis Familiares</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Recomendações, histórico e favoritos separados para cada membro.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4 border border-indigo-500/20 text-2xl">🔒</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Segurança Avançada</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Gerencie dispositivos e controle limites de telas ativas facilmente.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-fuchsia-500/10 flex items-center justify-center mb-4 border border-fuchsia-500/20 text-2xl">🎨</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Interface Customizável</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Múltiplos temas e layouts para adaptar o app ao seu estilo.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center mb-4 border border-red-500/20 text-2xl">⚡</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Performance Extrema</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Carregamento progressivo para navegação rápida sem travamentos.</p>
+                </div>
+
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4 border border-teal-500/20 text-2xl">🗂️</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Organização Automática</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Identifica e agrupa conteúdos por gênero, ano e coleções.</p>
+                </div>
+
+                <!-- Adicionando mais 8 para completar os 20 principais solicitados -->
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 border border-blue-500/20 text-2xl">🕒</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Continue Assistindo</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Sincronização do tempo exato do filme entre todos os seus aparelhos.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center mb-4 border border-yellow-500/20 text-2xl">🔔</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Notificações Inteligentes</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Avisos de novos episódios e conteúdos que você marcou como favoritos.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4 border border-green-500/20 text-2xl">📱</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Controle Celular</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Use seu smartphone como controle remoto e teclado virtual para a TV.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4 border border-indigo-500/20 text-2xl">📥</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Biblioteca Offline</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Baixe conteúdos e assista sem internet com sincronização de progresso.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 border border-purple-500/20 text-2xl">📊</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Dashboard Administrativo</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Acompanhe métricas, pagamentos e gerencie sua assinatura num portal unificado.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 flex items-center justify-center mb-4 border border-rose-500/20 text-2xl">🔄</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Atualizações Transparentes</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Novos recursos entregues automaticamente sem você precisar instalar nada.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 border border-cyan-500/20 text-2xl">🌍</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Sistema Multilíngue</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Interface disponível em PT, EN e ES, adaptando-se às suas preferências.</p>
+                </div>
+                <div class="glass glass-card p-6 rounded-2xl transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center mb-4 border border-pink-500/20 text-2xl">💎</div>
+                    <h3 class="text-sm font-bold text-white mb-2">Premium Experience</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Sem anúncios, sem interrupções. O entretenimento como ele deve ser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-24 px-6 relative bg-gradient-to-b from-transparent to-[#0a0f1c]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4">Planos Simples, Sem Pegadinhas.</h2>
+                <p class="text-gray-400">Comece hoje com <strong class="text-white">3 Dias Grátis</strong>. Cancele quando quiser.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- 3 Screens Plan -->
+                <div class="glass p-8 md:p-10 rounded-3xl relative border-blue-500/20 hover:border-blue-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-black text-white mb-2">Plano Básico (3 Telas)</h3>
+                    <p class="text-sm text-gray-400 mb-6">Ideal para você e sua família.</p>
+                    <div class="flex items-end gap-1 mb-8">
+                        <span class="text-4xl font-black text-white">$6.85</span>
+                        <span class="text-gray-500 font-semibold mb-1">/ mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                            <span class="text-blue-500">✓</span> 3 Dispositivos Simultâneos
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                            <span class="text-blue-500">✓</span> Qualidade 4K Ultra HD
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                            <span class="text-blue-500">✓</span> Acesso em TV, PC e Celular
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-300">
+                            <span class="text-blue-500">✓</span> Suporte Prioritário 24/7
+                        </li>
+                    </ul>
+                    <a href="/index.html?login=true&register=true" class="block text-center w-full py-4 glass border-white/10 hover:bg-white/10 text-white rounded-xl text-sm font-black transition-all">
+                        Começar 3 Dias Grátis
+                    </a>
+                </div>
+
+                <!-- 6 Screens Plan -->
+                <div class="glass p-8 md:p-10 rounded-3xl relative border-indigo-500/50 shadow-[0_0_40px_rgba(79,70,229,0.15)] transform md:-translate-y-4">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-white shadow-lg">
+                        Mais Popular
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-2">Plano Família (6 Telas)</h3>
+                    <p class="text-sm text-gray-400 mb-6">Acesso total para toda a casa.</p>
+                    <div class="flex items-end gap-1 mb-8">
+                        <span class="text-4xl font-black text-white">$13.75</span>
+                        <span class="text-gray-500 font-semibold mb-1">/ mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                            <span class="text-indigo-400">✓</span> 6 Dispositivos Simultâneos
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                            <span class="text-indigo-400">✓</span> Qualidade 4K Ultra HD
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                            <span class="text-indigo-400">✓</span> Acesso em TV, PC e Celular
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-white">
+                            <span class="text-indigo-400">✓</span> Perfis Ilimitados
+                        </li>
+                    </ul>
+                    <a href="/index.html?login=true&register=true" class="block text-center w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl text-sm font-black shadow-[0_10px_20px_rgba(79,70,229,0.3)] hover:-translate-y-1 transition-all">
+                        Começar 3 Dias Grátis
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 text-center">
+        <div class="flex items-center justify-center gap-6 mb-6">
+            <a href="/termos-de-uso.html" class="text-xs font-semibold text-gray-500 hover:text-white transition-colors">Termos de Uso</a>
+            <a href="/politica-de-privacidade.html" class="text-xs font-semibold text-gray-500 hover:text-white transition-colors">Privacidade</a>
+        </div>
+        <p class="text-xs text-gray-600">&copy; 2026 Broz.TV.VIP+. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

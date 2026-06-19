@@ -1,0 +1,78 @@
+{
+  "name": "broztv-vip",
+  "version": "1.0.0",
+  "description": "Player IPTV Híbrido BrozTV VIP+",
+  "main": "main.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "web": "npx http-server ./ -p 5000 -c-1",
+    "web:antigo": "npx http-server ./dist -p 5000 -c-1",
+    "proxy": "node proxy.js",
+    "cap:init": "npx cap init BrozTV com.broztv.vip --web-dir=.",
+    "cap:add-android": "npx cap add android",
+    "cap:sync": "npx cap sync"
+  },
+  "build": {
+    "appId": "com.broztv.vip",
+    "productName": "BrozTV VIP",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/images/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "publish": null,
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "index.html",
+      "index-*.js",
+      "package.json",
+      "assets/**/*",
+      "css/**/*",
+      "js/**/*",
+      "chunks/**/*",
+      "data/**/*",
+      "custom-mods.js",
+      "custom-mods/**/*",
+      "admin-gestor.js",
+      "sw.js",
+      "manifest.json",
+      "favicon.png",
+      "logo.png"
+    ]
+  },
+  "keywords": [
+    "iptv",
+    "player",
+    "hybrid",
+    "electron",
+    "capacitor"
+  ],
+  "author": "BrozTV",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^26.15.3",
+    "sharp": "^0.35.1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.10.0",
+    "node-fetch": "^3.3.2",
+    "stripe": "^22.2.2"
+  }
+}
